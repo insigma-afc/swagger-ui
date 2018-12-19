@@ -41,4 +41,5 @@ if [[ -n "${PORT}" ]]; then
     sed -i "s|8080|${PORT}|g" /etc/nginx/nginx.conf
 fi
 
+cat /etc/nginx/nginx.conf
 exec nginx -g 'daemon off;'
